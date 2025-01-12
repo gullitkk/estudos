@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*ele deu uma separada entre os elementos que tem dentro do main (a gente criou uma section separando imagem de texto e separamos eles usando a margin pra nao ficar tao colado */
+    margin: 10%; 
+}
+
+.titulo-destaque {
+    color: aqua;
+}
+
+.urgente {
+    color: red;
+}
+
+.texto-destaque {
+    color: aqua;
+}
+
+.apresentacao_conteudo { /* criamos uma class pra section de texto, ajustamos o tamanho dela conforme o projeto, depois criamos outras class pro titulo e paragrafo pra ajudar o tamanho da fonte deles dentro dessa section */
+    width: 615px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;;
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}

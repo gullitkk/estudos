@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*ele deu uma separada entre os elementos que tem dentro do main (a gente criou uma section separando imagem de texto e separamos eles usando a margin pra nao ficar tao colado */
+    margin: 10%; 
+}
+
+.titulo-destaque {
+    color: aqua;
+}
+
+.urgente {
+    color: red;
+}
+
+.texto-destaque {
+    color: aqua;
+}
+
+.apresentacao_conteudo { /* criamos uma class pra section de texto, ajustamos o tamanho dela conforme o projeto, depois criamos outras class pro titulo e paragrafo pra ajudar o tamanho da fonte deles dentro dessa section */
+    width: 615px;
+    display: flex;
+    flex-direction: column; /* naturalmente o flexbox vai deixar todo mundo lado a lado, pro site n ficar estranho deixamos em colunas */
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;;
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao_conteudo_links { /* criamos uma div indicando a area dos links e outra div indicando os links especificos o link1, habilitamos o flexbox e demos espaçamento */
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao_conteudo_links_link1 {
+    background-color: #22D4FD;
+    border-radius: 14px; /* arrendodar a borda */
+    padding: 21.5px 0;
+    width: 280px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}

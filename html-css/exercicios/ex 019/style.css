@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(139, 214, 187);
+}
+h1 {
+    color: rgb(16, 68, 34);
+    
+}
+#eba {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+h2 {
+    color: rgb(45, 133, 73);
+}
+.xablau {
+    
+    color: white;
+}

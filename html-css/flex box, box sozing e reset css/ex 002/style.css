@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh; /* fazer os componetes ocupar 100% da tela */
+    width: 100%; /* fazer os componetes ocupar 100% da tela */
+    color: white;
+    background-color: black;
+    box-sizing: border-box; /*fazer cada componete permanecer na sua devida "div" */
+}

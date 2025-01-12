@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*ele deu uma separada entre os elementos que tem dentro do main (a gente criou uma section separando imagem de texto e separamos eles usando a margin pra nao ficar tao colado */
+    margin: 10%; 
+}
+.titulo-destaque {
+    color: aqua;
+}
+.urgente {
+    color: red;
+}
+.texto-destaque {
+    color: aqua;
+}

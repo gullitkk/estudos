@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+.container {
+    display: flex; /*habilitando o flexbox pra esse main */
+    align-items: center; /* centralizando o main */ /* ele alinha com o maior elemento ou seja a imagem */
+    flex-direction: row; /* ajustar a direção dos itens */
+    flex-wrap: wrap; /* pros itens se ajustar conforme o tamanho da tela */
+}

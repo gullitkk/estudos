@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>testando imagens pra diferentes dispositivos</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio no site</h1>
+
+    <audio controls autoplay preload="metadata "> 
+        <source src="Little Umbrellas - TrackTribe.mp3" type="audio/mpeg">
+        <source src="Little Umbrellas - TrackTribe.ogg" type="audio/ogg">
+        <source src="Little Umbrellas - TrackTribe.wav" type="audio/wav">
+        <p>Seu navegador não tem suporte pro audio, <a href="Little Umbrellas - TrackTribe.mp3">por favor baixe o arquivo pra conseguir ouvir</a></p>
+
+    </audio>
+</body>
+</html>
