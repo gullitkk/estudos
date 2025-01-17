@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="images/bateria.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="app.js"></script>
+    
 
 </head>
 <body>
@@ -22,17 +22,17 @@
     <h1>Alura Midi</h1>
 
     <section class="teclado">
-        <button onclick="pom()" class="tecla tecla_pom">Pom</button>
-        <button onclick="" class="tecla tecla_clap">Clap</button>
-        <button onclick="" class="tecla tecla_tim">Tim</button>
+        <button onclick= "somPom()" class="tecla tecla_pom">Pom</button>
+        <button onclick="somClap()" class="tecla tecla_clap">Clap</button>
+        <button onclick="somTim()" class="tecla tecla_tim">Tim</button>
 
-        <button onclick="" class="tecla tecla_puff">Puff</button>
-        <button onclick="" class="tecla tecla_splash">Splash</button>
-        <button onclick="" class="tecla tecla_toim">Toim</button>
+        <button onclick="somPuff()" class="tecla tecla_puff">Puff</button>
+        <button onclick="somSplash()" class="tecla tecla_splash">Splash</button>
+        <button onclick="somToim()" class="tecla tecla_toim">Toim</button>
 
-        <button onclick="" class="tecla tecla_psh">Psh</button>
-        <button onclick="" class="tecla tecla_tic">Tic</button>
-        <button onclick="" class="tecla tecla_tom">Tom</button>
+        <button onclick="somPsh()" class="tecla tecla_psh">Psh</button>
+        <button onclick="somTic()" class="tecla tecla_tic">Tic</button>
+        <button onclick="somTom()" class="tecla tecla_tom">Tom</button>
     </section>
 
     <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
@@ -45,5 +45,6 @@
     <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
     <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
+    <script src="app.js"></script>
 </body>
 </html>
