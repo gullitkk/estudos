@@ -1,6 +1,8 @@
+// função para tocar som//
 function tocarSom(id) {
     document.getElementById(id).play();
 }
+// chamando as funçãos pelo botão e acionando a função tocar som//
 function somPom() {
    tocarSom('som_tecla_pom');
 }
