@@ -1,27 +1,30 @@
+function tocarSom(id) {
+    document.getElementById(id).play();
+}
 function somPom() {
-    document.getElementById('som_tecla_pom').play();
+   tocarSom('som_tecla_pom');
 }
 function somClap() {
-    document.getElementById('som_tecla_clap').play();
+    tocarSom('som_tecla_clap');
 }
 function somTip() {
-    document.getElementById('som_tecla_tip').play();
+    tocarSom('som_tecla_tip');
 }
 function somPuff() {
-    document.getElementById('som_tecla_puff').play();
+    tocarSom('som_tecla_puff');
 }
 function somSplash() {
-    document.getElementById('som_tecla_splash').play();
+    tocarSom('som_tecla_splash');
 }
 function somToim() {
-    document.getElementById('som_tecla_toim').play();
+    tocarSom('som_tecla_toim');
 }
 function somPsh() {
-    document.getElementById('som_tecla_psh').play();
+    tocarSom('som_tecla_psh');
 }
 function somTic() {
-    document.getElementById('som_tecla_tic').play();
+    tocarSom('som_tecla_tic');
 }
 function somTom() {
-    document.getElementById('som_tecla_tom').play();
+    tocarSom('som_tecla_tom');
 }
