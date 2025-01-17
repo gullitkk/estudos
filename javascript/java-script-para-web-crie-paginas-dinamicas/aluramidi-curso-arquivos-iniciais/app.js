@@ -7,8 +7,8 @@ function somPom() {
 function somClap() {
     tocarSom('som_tecla_clap');
 }
-function somTip() {
-    tocarSom('som_tecla_tip');
+function somTim() {
+    tocarSom('som_tecla_tim');
 }
 function somPuff() {
     tocarSom('som_tecla_puff');
