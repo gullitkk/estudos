@@ -11,4 +11,10 @@ for (let i = 0; i < teclasSoms.length; i++) { // criei um for para que eu consig
     teclasSoms[i].onclick = function () { //função anonima: precisava usar os parametros para chamar a função tocar som mas se eu botasse parentese a função ia chamar de imediato para isso criamos uma function e dentro da function chamamos a desejada sem se preocupar dela ser chamada de cara// 
         tocarSom(idAudio);
     } //o i vai indicar a posição da lista logo a tecla que eu apertei e o .onclick indica que so e pra chamar a função no click// 
+    teclasSoms.onkeydown = function() {
+        teclasSoms.classList.add('.active'); // onkeydown seria basicamente qando uma tecla desce, ou seja pressionada, então quando uma tecla e pressionada em tal teclasoms ele adiciona a class active que dar a corzinha//
+    } 
+    teclasSoms.onkeyup = function() {
+        teclasSoms.classList.remove('.ative'); // aqui seria quando a tecla sobe, ou seja depois que a gente aperta a tecla ela volta e tira função// 
+    }
 }   
