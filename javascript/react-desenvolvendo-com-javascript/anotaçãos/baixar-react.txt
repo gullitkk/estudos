@@ -6,3 +6,5 @@ entra no terminal usa o comando
  e a linguagem no nosso caso java script +swc
 depois da cd nome do projeto
 e npm install
+ // tem que baixar o node antes, so tacar no google e baixar a versão recomendada, vai baixando
+tudo que ele for oferecendo // 
