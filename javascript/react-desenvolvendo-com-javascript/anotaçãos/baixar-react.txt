@@ -4,3 +4,5 @@ entra no terminal usa o comando
  coloca o nome do projeto
  seleciona o tipo de framework no nosso caso react
  e a linguagem no nosso caso java script +swc
+depois da cd nome do projeto
+e npm install
