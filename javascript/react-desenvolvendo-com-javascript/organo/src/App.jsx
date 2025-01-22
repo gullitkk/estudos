@@ -2,12 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Banner from './componetes/Banner/banner'
+
 
 function App() {
   const [count, setCount] = useState(0)
-
+  // chamamos o banner pra dentro da function ou seja para ele aparecer, fechamos ele com o /> e o vs code automaticamente fez um import la em cima desse componete que a gente criou//
+  // o react e isso a gente cria componetes e importa pro principal // 
   return (
-    <>
+    <>  
+      <Banner /> 
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

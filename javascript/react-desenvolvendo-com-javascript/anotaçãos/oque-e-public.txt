@@ -1,0 +1,1 @@
+o public e basicamente aquilo que vai estar disponivel ao usuario, uma das formas da gente usar imagem estatica e botando no public
