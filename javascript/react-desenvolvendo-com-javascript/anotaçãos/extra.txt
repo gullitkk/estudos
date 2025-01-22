@@ -1,2 +1,3 @@
 passei a utilizar o terminal do vs code, como tenho git instalado estou usando o terminal bash, mais facil
 todos componetes que eu for criar usar o .jsx no lugar de .js pois agora o vite so reconhece .jsx
+ctrl c no terminal encerra o run dev
