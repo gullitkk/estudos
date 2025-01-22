@@ -1,5 +1,6 @@
 criando o react
 entra no terminal usa o comando 
- npx create-react-app organo
-vale dizer que o ultimo termo "organo" e o nome e pode ser alterado
-com isso ele vai criar um pasta ja organizada do react
+ npm create vite@latest
+ coloca o nome do projeto
+ seleciona o tipo de framework no nosso caso react
+ e a linguagem no nosso caso java script +swc
