@@ -1,7 +1,5 @@
 para iniciar o projeto 
 continua no terminal - entre na pasta que ele criou e digite o comando 'cd organo'
-depois use o comando 'npm start'
+depois use o comando 'npm run dev'
 
 // diferença entre npm e npx: npm roda coisas locais, npx coisas remotas//  
-//sofri uma incompatibilidades ent tive que usar o comando --legacy--peer-deps junto com o
-create para ignorar as incompatibilidades e seguir em frente// 
