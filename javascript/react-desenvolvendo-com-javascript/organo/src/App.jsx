@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Banner from './componetes/Banner/banner'
-
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Banner from './componetes/Banner/banner';
 
 
 function App() {
@@ -12,9 +11,9 @@ function App() {
   // o react e isso a gente cria componetes e importa pro principal // 
   return (
     <>  
-      <Banner />
       <div>
-        <a href="https://vite.dev" target="_blank">
+          <Banner />
+          <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
@@ -27,7 +26,7 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Edite <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
