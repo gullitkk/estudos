@@ -1,3 +1,4 @@
 oque e um componete: Componentes são um dos conceitos centrais do React. Eles são a base sobre a qual você constrói interfaces de usuário (UI), o que os torna o lugar perfeito para começar sua jornada no React!
 
 para começar a mexer no nosso codigo e interessante seperar os Componetes criar pastas separadas organizando os componetes
+criei uma pasta chamada componetes dentro do src, dps disso criei outra pasta chamada banner com B maiusculo e e dentro do Banner criei um Banner.js
