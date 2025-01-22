@@ -1,4 +1,4 @@
-import './Banner.css'
+import './Banner.css' // o ponto antes e obrigatorio e por esta na mesma pasta o banner.css n precisa ta exportando/
 
 function Banner() {
     return (
@@ -7,7 +7,6 @@ function Banner() {
         </header> 
         
         // parece html mas na verdade e um jsx, jsx nada mais e que um tradutor ele pega esse codigo que eu escrevi aparatemente html e transforma em um codigo que serviria pro js, por exemplo nesse caso o codigo seria tipo um document.create('img')// 
-
         //o alt e importante na hora de colocar uma imagem pois e um texto para exemplificar oque e aquela imagem, esse texto nao aparece// 
     )
 
