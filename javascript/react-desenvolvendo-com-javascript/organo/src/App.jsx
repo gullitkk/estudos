@@ -2,7 +2,8 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import Banner from './componetes/Banner/banner';
+import Banner from './componetes/Banner/Banner.js';
+
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
   // o react e isso a gente cria componetes e importa pro principal // 
   return (
     <>  
+      < Banner />
       <div>
-          <Banner />
+      
           <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
