@@ -1,0 +1,5 @@
+criando o react
+entra no terminal usa o comando 
+ npx create-react-app organo
+vale dizer que o ultimo termo "organo" e o nome e pode ser alterado
+com isso ele vai criar um pasta ja organizada do react
