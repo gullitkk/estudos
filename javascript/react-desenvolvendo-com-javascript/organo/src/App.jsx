@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './components/Banner/Banner';
+import CampoTexto from './components/CampoTexto/CampoTexto';
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
   return (
     <>  
       <Banner />
+      <CampoTexto />
     </>
   )
 }
