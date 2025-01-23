@@ -1,7 +1,6 @@
 .banner {
-    background-color: #6278F7;
-    text-align: center;
+
 }  
 .banner img {
-    max-width: 100%; /* deixar responsivo */  /* NAO CONSEGUI DEIXAR ELE PRA OCUPAR A TELA TODA */ 
-}
+    width: 100%; /* deixar responsivo */  /* NAO CONSEGUI DEIXAR ELE PRA OCUPAR A TELA TODA */ 
+} 
