@@ -1,6 +1,8 @@
+import './CampoTexto.css'
 const CampoTexto = () => {
     return (
         <div className="form_criar_card"> 
+            <h2>Preencha os dados para criar o card do colaborador.</h2>
             <label>Nome</label>
             <input type="text" placeholder="Digite seu nome"/>
             <label>Cargo</label>
