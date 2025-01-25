@@ -1,5 +1,5 @@
 .campo-texto {
-    margin: 4em;
+    margin: 24px 0;
 }
 .campo-texto label{
     display: block; /* para quebrar a linha e não ficar lado a lado*/

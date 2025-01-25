@@ -3,7 +3,7 @@ import './Formulario.css'
 
 export const Formulario = () => {
     return (
-        <section>
+        <section className='formulario'>
             <form>
             <CampoTexto label='Nome do campeão' placeholder='Digite o nome do seu campão'/>  
             <CampoTexto label='Função'  placeholder='Digite a função do seu campão'/>
