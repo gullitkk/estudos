@@ -1,10 +1,16 @@
-.form_criar_card {
+.campo-texto {
     margin: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f6f6f6b4;
 }
-#button_criar_card {
-    width: 10000000000px;
+.campo-texto label{
+    display: block; /* para quebrar a linha e não ficar lado a lado*/
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+.campo-texto input {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.06);
+    border: none;
+    padding: 24px;
+    font-size: 24px;
 }

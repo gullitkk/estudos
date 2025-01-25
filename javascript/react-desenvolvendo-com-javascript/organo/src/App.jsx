@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Banner from './components/Banner'; //colocando o nome de index.jsx voce so precisa colocar o nome da pasta no import pois o import ja identifica o jsx//
-import CampoTexto from './components/CampoTexto'; //criamos um arquivo chamado index.jsx e la exportamos e importamos oque a gente quiser, esse metodo e parecido com o do banner de so renomear o arquivo para index.jsx mas aqui o nosso arquivo principal continua com o nome desejado e a gente escolhe oque quer importar, a partir de agora vou usar esse jeito// 
 
 function App() {
   
@@ -10,9 +9,8 @@ function App() {
   return (
     <>  
       <Banner />
-      <CampoTexto />
     </>
-  )
+  ) 
 }
 
 export default App

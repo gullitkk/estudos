@@ -1,18 +1,10 @@
 import './CampoTexto.css'
 
-export const CampoTexto = () => {
-    return (
-        <div className="form_criar_card"> 
-            <h2>Preencha os dados para criar o card do colaborador.</h2>
-            <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome"/>
-            <label>Cargo</label>
-            <input type="text" placeholder="Digite seu cargo"/>
-            <label>Imagem</label>
-            <input type="text" placeholder="Informe o endereço da imagem" />
-            <label>Time</label>
-            <select name="" id=""></select>
-            <button placeholder='Criar card' id='buttun_criar_card'></button>
+export const CampoTexto = (props) => { // aqui criamos um parametro para receber aqueles que estamos mandando no app.jsx, o nome n importa mas na maioria das vezes usamos props// 
+    return ( // aqui colocamos props.label porque estamos chamano o parametro e especificando o caminho label, tem que colocal entre chaves se não ele entende como texto, o mesmo vale para o props.placeholder. // 
+        <div className="campo-texto"> 
+            <label>{props.label}</label> 
+            <input type="text" placeholder={props.placeholder}/>
         </div>
     )
 }
