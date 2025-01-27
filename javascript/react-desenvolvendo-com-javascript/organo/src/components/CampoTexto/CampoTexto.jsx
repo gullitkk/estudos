@@ -3,6 +3,7 @@ import './CampoTexto.css'
 export const CampoTexto = (props) => { // aqui criamos um parametro para receber aqueles que estamos mandando no app.jsx, o nome n importa mas na maioria das vezes usamos props// 
     return ( // aqui colocamos props.label porque estamos chamano o parametro e especificando o caminho label, tem que colocal entre chaves se não ele entende como texto, o mesmo vale para o props.placeholder. // 
         <div className="campo-texto"> 
+        
             <label>{props.label}</label> 
             <input type="text" placeholder={props.placeholder}/>
         </div>
