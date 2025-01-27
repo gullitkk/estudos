@@ -1,0 +1,15 @@
+.botao {
+    background-color: #6278f7;
+    color: #ffff;
+    padding: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /* para quando voce passar o mouse ficar com a maozinha */
+    margin: 32px 0;
+}
+
+.botao:hover {
+    color: #95FFD4;
+}

@@ -1,3 +1,4 @@
+import  Botao  from '../Botao'
 import CampoTexto from '../CampoTexto' //criamos um arquivo chamado index.jsx e la exportamos e importamos oque a gente quiser, esse metodo e parecido com o do banner de so renomear o arquivo para index.jsx mas aqui o nosso arquivo principal continua com o nome desejado e a gente escolhe oque quer importar, a partir de agora vou usar esse jeito// 
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
@@ -19,8 +20,12 @@ export const Formulario = () => {
             <CampoTexto label='Função'  placeholder='Digite a função do seu campão'/>
             <CampoTexto label='imagem'  placeholder='Informe o endereço da imagem'/>
             <ListaSuspensa label='Posição' itens={itens} />
+            <Botao>
+                Criar card
+            </Botao>
             </form> 
         </section> 
+        // aqui colocamos o texto do corpo do botao, fazendo o texto se tornar filho do botão// 
         // aqui dentro do form chamamos a lista suspensa, demos um label a ela, e demos um props a ela chamado itens que e igual a const itens, costante essa q e uma lista com os nomes predefinodos do que eu quero q apareça no select// 
         // aqui criamos parametros, agora ele esta mandando essas informaçãos que colocamos entre aspas la pra função campo texto// 
     )
