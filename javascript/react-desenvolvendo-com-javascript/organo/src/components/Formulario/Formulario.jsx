@@ -31,7 +31,7 @@ export const Formulario = () => {
                 obrigatorio={true}
                 label='Nome do campeão'
                 placeholder='Digite o nome do seu campão'
-                valor={nome} 
+                valor={nome}
                 aoAlterado={valor => setNome(valor)}
             />  
             <CampoTexto 
