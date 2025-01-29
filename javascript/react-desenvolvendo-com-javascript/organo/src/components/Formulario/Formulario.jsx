@@ -2,6 +2,7 @@ import  Botao  from '../Botao'
 import CampoTexto from '../CampoTexto' //criamos um arquivo chamado index.jsx e la exportamos e importamos oque a gente quiser, esse metodo e parecido com o do banner de so renomear o arquivo para index.jsx mas aqui o nosso arquivo principal continua com o nome desejado e a gente escolhe oque quer importar, a partir de agora vou usar esse jeito// 
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
+import React, { useEffect, useState } from "react";
 
 export const Formulario = () => {
 
@@ -12,13 +13,14 @@ export const Formulario = () => {
         'jg'
     ]
 
+    const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o serValor seria aquilo que altera// 
+    const [imagem, setimagem] = useState('')
+    const [função, setFunção] = useState('')
+
     const aoSalvar = (evento) => { // esse parametro evento e do js, o evento do onsubmit que seria o acionamento do botão// 
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
-        console.log('O form foi submetido')
+        console.log('O form foi submetido =>', nome, imagem, função)
     }
-        const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o serValor seria aquilo que altera// 
-        const [imagem, setimagem] = useState('')
-        const [função, setFunção] = useState('')
 
     return (
         <section className='formulario'>
@@ -37,11 +39,10 @@ export const Formulario = () => {
                 valor = {função}
                 aoAlterado = {valor => setFunção(valor)} 
             <CampoTexto 
-            obrigatorio={true} 
-            label='imagem'  
-            placeholder='Informe o endereço da imagem'/>
-            valor = {imagem}
-            aoAlterado = {valor => setimagem(valor)}
+                label='imagem'  
+                placeholder='Informe o endereço da imagem'/>
+                valor = {imagem}
+                aoAlterado = {valor => setimagem(valor)}
             <ListaSuspensa obrigatorio={true} label='Posição' itens={itens} />
             <Botao>
                 Criar card
