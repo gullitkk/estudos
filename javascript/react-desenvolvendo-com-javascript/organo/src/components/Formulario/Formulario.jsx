@@ -53,7 +53,7 @@ export const Formulario = () => {
                  label='Posição'
                  itens={itens} 
                  valor={posição}
-                 aoAlterado={posição => setPosição(valor)}
+                 aoAlterado={valor => setPosição(valor)}
             />
             <Botao>
                 Criar card
