@@ -16,14 +16,24 @@ export const Formulario = () => {
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
         console.log('O form foi submetido')
     }
-        const 
+        const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o serValor seria aquilo que altera// 
+        const [imagem, setimagem] = useState('')
+        const [cargo, setCargo] = useState('')
 
     return (
         <section className='formulario'>
             <form onSubmit={aoSalvar}> 
             <h2>Prencha os dados para criar o card do seu campão</h2>
-            <CampoTexto obrigatorio={true} label='Nome do campeão' placeholder='Digite o nome do seu campão'/>  
-            <CampoTexto obrigatorio={true} label='Função'  placeholder='Digite a função do seu campão'/>
+            <CampoTexto
+                obrigatorio={true}
+                label='Nome do campeão'
+                placeholder='Digite o nome do seu campão'/>  
+                valor = {nome}
+                aoAlterado
+            <CampoTexto 
+                obrigatorio={true} 
+                label='Função' 
+                placeholder='Digite a função do seu campão'/>
             <CampoTexto label='imagem'  placeholder='Informe o endereço da imagem'/>
             <ListaSuspensa obrigatorio={true} label='Posição' itens={itens} />
             <Botao>
