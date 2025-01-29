@@ -21,7 +21,7 @@ export const Formulario = () => {
 
     const aoSalvar = (evento) => { // esse parametro evento e do js, o evento do onsubmit que seria o acionamento do botão// 
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
-        console.log('O form foi submetido =>', nome, imagem, função)
+        console.log('O form foi submetido =>', nome, imagem, função, posição)
     }
 
     return (
