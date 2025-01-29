@@ -17,7 +17,7 @@ export const CampoTexto = (props) => { // aqui criamos um parametro para receber
         </div>
     )
 }
-//como definimos um value e falamos que o value e igual a valor e valor e igual a evento.target.value, o react n renderiza e acaba criando um conflito onde ele n sabe quando tem q renderizar o dom, ent ele so adiciona a primeira letra digita ao valor, para mudar isso precisamos manipular o estado//
+//como definimos um value e falamos que o value e igual a valor e valor e igual a evento.target.value, o react n renderiza e acaba ficando o valor la na campo texto sem ser alterado porque ele n sabe quando tem q renderizar o dom, ent ele so adiciona a primeira letra digitada ao valor e permanece com o nome heitor nos campos de texto, para mudar isso precisamos manipular o estado//
 //onchange seria as mudanças feitas ou seja estou dizendo que as mudanças feitas vao ser iguais a aoValor, value estou definindo um valor padrão que seria heitor, la em cima falamos que a const aoValor e igual a uma arrow function onde valor vai ser igual a evento.target.value, evento seria um parametro do js que usamos para acessar os eventos que ocorre em algum lugar, target seria algo prenchido e value seria valor, ou seja estamos dizendo que valor e igual ao que for escrito// 
 //aqui colocamos o export direto na function// 
 //aqui a gente n usa o class para atribuir classes, usamos className // 
