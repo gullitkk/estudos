@@ -2,7 +2,7 @@ import './CampoTexto.css'
 
 export const CampoTexto = (props) => { // aqui criamos um parametro para receber aqueles que estamos mandando no app.jsx, o nome n importa mas na maioria das vezes usamos props// 
 
-    let valor = ''
+    let valor = 'heitor'
 
     const aoValor = (evento) => {
         valor = evento.target.value
@@ -13,7 +13,7 @@ export const CampoTexto = (props) => { // aqui criamos um parametro para receber
         <div className="campo-texto"> 
         
             <label>{props.label}</label> 
-            <input onChange={aoValor} type="text" required={props.obrigatorio} placeholder={props.placeholder}/>
+            <input value={valor} onChange={aoValor} type="text" required={props.obrigatorio} placeholder={props.placeholder}/>
         </div>
     )
 }
