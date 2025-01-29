@@ -9,7 +9,7 @@ function App() {
 
   const [campeao, setCampeao]= userState()
 
-  aoNovoCampeaoAdicionado => (props) {
+  const aoNovoCampeaoAdicionado = (campeao) => {
     console.log(campeao)
   }
 
