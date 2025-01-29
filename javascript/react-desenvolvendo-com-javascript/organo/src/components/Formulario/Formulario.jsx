@@ -21,7 +21,7 @@ export const Formulario = (props) => {
 
     const aoSalvar = (evento) => { // esse parametro evento e do js, o evento do onsubmit que seria o acionamento do botão// 
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
-        props.aoCampeaoCadastrado({
+        props.aoCampeaoCadastrado({ //sempre quando tiver um submit ele vai acionar o props.aoCampeaoCadastrado que e aquela funçao que eu botei no app.jsx dentro do formulario e ta ligada a funçao do app.jsx, e ele vai chamar o nome,funçao,imagem,posiço, que ta vindo dos inputs// 
             nome,
             função,
             imagem,
