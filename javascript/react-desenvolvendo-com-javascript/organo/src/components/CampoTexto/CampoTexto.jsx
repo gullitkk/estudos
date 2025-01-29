@@ -4,15 +4,15 @@ export const CampoTexto = (props) => { // aqui criamos um parametro para receber
 
     //let valor = 'heitor'//
 
-    const aoAlterado = (evento) => {
-        aoAlterado = evento.target.value
+    const aoDigitado = (evento) => {
+        props.aoAlterado(evento.target.value)
     }
 
     return ( // aqui colocamos props.label porque estamos chamano o parametro e especificando o caminho label, tem que colocal entre chaves se não ele entende como texto, o mesmo vale para o props.placeholder. // 
         <div className="campo-texto"> 
         
             <label>{props.label}</label> 
-            <input value={props.valor} onChange={aoAlterado} type="text" required={props.obrigatorio} placeholder={props.placeholder}/>
+            <input value={props.valor} onChange={aoDigitado} type="text" required={props.obrigatorio} placeholder={props.placeholder}/>
         </div>
     )
 }

@@ -18,7 +18,7 @@ export const Formulario = () => {
     }
         const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o serValor seria aquilo que altera// 
         const [imagem, setimagem] = useState('')
-        const [cargo, setCargo] = useState('')
+        const [função, setFunção] = useState('')
 
     return (
         <section className='formulario'>
@@ -34,7 +34,14 @@ export const Formulario = () => {
                 obrigatorio={true} 
                 label='Função' 
                 placeholder='Digite a função do seu campão'/>
-            <CampoTexto label='imagem'  placeholder='Informe o endereço da imagem'/>
+                valor = {função}
+                aoAlterado = {valor => setFunção(valor)} 
+            <CampoTexto 
+            obrigatorio={true} 
+            label='imagem'  
+            placeholder='Informe o endereço da imagem'/>
+            valor = {imagem}
+            aoAlterado = {valor => setimagem(valor)}
             <ListaSuspensa obrigatorio={true} label='Posição' itens={itens} />
             <Botao>
                 Criar card
