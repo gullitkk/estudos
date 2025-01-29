@@ -17,6 +17,7 @@ export const Formulario = () => {
     const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o serValor seria aquilo que altera// 
     const [função, setFunção] = useState('')
     const [imagem, setimagem] = useState('')
+    const [posição, setPosição] = useState('')
 
     const aoSalvar = (evento) => { // esse parametro evento e do js, o evento do onsubmit que seria o acionamento do botão// 
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
@@ -47,7 +48,13 @@ export const Formulario = () => {
                 valor={imagem}  
                 aoAlterado={valor => setimagem(valor)}
             />              
-            <ListaSuspensa obrigatorio={true} label='Posição' itens={itens} />
+            <ListaSuspensa
+                 obrigatorio={true}
+                 label='Posição'
+                 itens={itens} 
+                 valor={posição}
+                 aoAlterado={posição => setPosição(valor)}
+            />
             <Botao>
                 Criar card
             </Botao>
