@@ -7,10 +7,11 @@ function App() {
   // o react e isso a gente cria componetes e importa pro principal // 
   // tiramos as coisas do campo texto daqui pois vamos iplementar ele no formulario, como ele vai ficar dentro do formulario e mais facil de  importar ele la, e depois so exporta o formulario aqui//
 
-  const [campeao, setCampeao]= useState()
+  const [campeaoes, setCampeao]= useState()
 
   const aoNovoCampeaoAdicionado = (campeao) => {
     console.log(campeao)
+    setCampeao([campeaoes, campeao])
   }
 
   return (

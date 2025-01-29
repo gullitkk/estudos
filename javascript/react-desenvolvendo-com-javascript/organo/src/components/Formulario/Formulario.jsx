@@ -21,7 +21,12 @@ export const Formulario = (props) => {
 
     const aoSalvar = (evento) => { // esse parametro evento e do js, o evento do onsubmit que seria o acionamento do botão// 
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
-        props.aoNovoCampeaoAdicionado()
+        props.aoCampeaoCadastrado({
+            nome,
+            função,
+            imagem,
+            posição
+        })
     }
 
     return (
