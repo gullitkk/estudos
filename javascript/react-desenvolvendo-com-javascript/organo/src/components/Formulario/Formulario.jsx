@@ -16,6 +16,7 @@ export const Formulario = () => {
         evento.preventDefault() //essa função ela remove o comportamento padrão, porque o comportamento padrão seria recarregar a pagina mas a gnt n quer isso//
         console.log('O form foi submetido')
     }
+        const 
 
     return (
         <section className='formulario'>
