@@ -17,6 +17,7 @@ export const CampoTexto = (props) => { // aqui criamos um parametro para receber
         </div>
     )
 }
+//onchange seria as mudanças feitas ou seja estou dizendo que as mudanças feitas vao ser iguais a aoValor, value estou definindo um valor padrão que seria heitor, la em cima falamos que a const aoValor e igual a uma arrow function onde valor vai ser igual a evento.target.value, evento seria um parametro do js que usamos para acessar os eventos que ocorre em algum lugar, target seria algo prenchido e value seria valor, ou seja estamos dizendo que valor e igual ao que for escrito// 
 //aqui colocamos o export direto na function// 
 //aqui a gente n usa o class para atribuir classes, usamos className // 
 //essa estrutura faz a mesma coisa que a estrutura do banner, a diferença e que com arrow function o codigo fica menos verbalizado//  
