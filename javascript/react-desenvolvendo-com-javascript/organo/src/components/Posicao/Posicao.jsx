@@ -2,6 +2,8 @@ import './Posicao.css'
 
 export const Posicao = (props) => {
     return (
-        VideoColorSpace
+        <section>
+            <h3>{props.nome}</h3>
+        </section>
     )
 }

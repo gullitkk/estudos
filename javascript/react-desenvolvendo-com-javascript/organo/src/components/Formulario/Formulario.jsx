@@ -10,7 +10,7 @@ export const Formulario = (props) => {
         'Top lane',
         'Mid lane',
         'bot lane',
-        'jg'
+        'jungle'
     ]
 
     
