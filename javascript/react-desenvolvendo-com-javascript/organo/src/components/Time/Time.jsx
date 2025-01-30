@@ -1,3 +1,7 @@
 import './Time.css'
 
-const 
+export const Time = (props) => {
+    return (
+        VideoColorSpace
+    )
+}
