@@ -2,7 +2,7 @@ import './Posicao.css'
 
 export const Posicao = (props) => {
     return (
-        <section>
+        <section className='Time'>
             <h3>{props.nome}</h3>
         </section>
     )
