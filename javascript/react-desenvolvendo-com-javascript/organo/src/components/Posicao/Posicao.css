@@ -1,3 +1,11 @@
 .Time {
     text-align: center;
+    background-color: #D9F7E9;
+    padding: 32px;
+}
+
+.time h3 {
+    font-size: 32px;
+    border-bottom: 4px solid #57C278;
+    color: #57C278;
 }
