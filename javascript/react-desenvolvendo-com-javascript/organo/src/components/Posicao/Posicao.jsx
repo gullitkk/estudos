@@ -6,6 +6,7 @@ export const Posicao = (props) => {
         <section className='Time' style={{ backgroundColor: props.corSecundaria }}> 
             <h3 style={{ borderColor: props.corPrimaria}}>{props.nome}</h3>
             <Colaborador />
+            <Colaborador />
         </section>
     ) // precisamos alterar a cor do fundo e da letra usando props como o css n aceita props, usamos o css inlinem dentro do lugar que vc quer aplicar abr um style dentro do style abra uma segunda chaves ai altere// 
 }
