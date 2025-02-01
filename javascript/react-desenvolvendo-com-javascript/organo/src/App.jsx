@@ -11,7 +11,7 @@ function App() {
   const posicao = [
     {
       nome: 'Top lane',
-      corPrimaria: '#57C278;',
+      corPrimaria: '#57C278',
       corSecundaria: '#D9F7E9'
     },
     {
