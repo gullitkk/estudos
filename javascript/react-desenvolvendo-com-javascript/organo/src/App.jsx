@@ -8,6 +8,29 @@ function App() {
   // o react e isso a gente cria componetes e importa pro principal // 
   // tiramos as coisas do campo texto daqui pois vamos iplementar ele no formulario, como ele vai ficar dentro do formulario e mais facil de  importar ele la, e depois so exporta o formulario aqui//
 
+  const posicao = [
+    {
+      nome: 'Top lane',
+      corPrimaria: '#57C278;',
+      corSecundaria: '#D9F7E9'
+    },
+    {
+      nome: 'Mid lane',
+      corPrimaria: '#82CFFA',
+      corSecundaria: '#E8F8FF'
+    },
+    {
+      nome: 'Bot lane',
+      corPrimaria: '#A6D157',
+      corSecundaria: '#F0F8E2'
+    },
+    {
+      nome: 'jungle',
+      corPrimaria: '#E06B69',
+      corSecundaria: '#FDE7E8'
+    }
+  ]
+
   const [campeaoes, setCampeao]= useState()
 
   const aoNovoCampeaoAdicionado = (campeao) => {
@@ -19,10 +42,7 @@ function App() {
     <>  
       <Banner />
       <Formulario aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
-      <Posicao nome='Top lane' />
-      <Posicao nome='Bot lane' />
-      <Posicao nome='Mid lane' />
-      <Posicao nome='Jungle' />
+      {posicao.map(posicao => <Posicao key={time.nome} nome={posicao.nome} />)}
     </>
   ) // aoCampeaoCadastrado e um props q e igual a campeao q e igual a uma arrow function chamada aoNovoCampeaoAdicionado que usa o campeao como parametro//
 }
