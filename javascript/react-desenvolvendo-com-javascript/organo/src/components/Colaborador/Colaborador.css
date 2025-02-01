@@ -10,7 +10,7 @@
     width: 100px;
     border-radius: 50%;
     position: relative;
-    bottom: -50px;
+    top: 50px;
 }
 
 .colaborador .rodape {
