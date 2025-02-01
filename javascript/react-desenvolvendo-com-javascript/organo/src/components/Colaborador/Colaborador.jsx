@@ -3,7 +3,7 @@ import './Colaborador.css'
 export const Colaborador = () => {
     return (
     <div className='colaborador'>
-        <div className='cabeçalho'>
+        <div className='cabecalho'>
             <img src="https://github.com/gullitkk.png" alt="heitor"/>
         </div>
             <div className='rodape'>
