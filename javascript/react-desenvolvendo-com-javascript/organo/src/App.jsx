@@ -42,7 +42,7 @@ function App() {
     <>  
       <Banner />
       <Formulario aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
-      {posicao.map(posicao => <Posicao key={time.nome} nome={posicao.nome} />)}
+      {posicao.map(posicao => <Posicao key={posicao.nome} nome={posicao.nome} />)}
     </>
   ) // aoCampeaoCadastrado e um props q e igual a campeao q e igual a uma arrow function chamada aoNovoCampeaoAdicionado que usa o campeao como parametro//
 }
