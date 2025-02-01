@@ -1,12 +1,11 @@
 .Time {
     text-align: center;
-    background-color: #D9F7E9;
     padding: 32px;
 }
 
 .Time h3 {
     font-size: 32px;
-    border-bottom: 4px solid #57C278;
+    border-bottom: 4px solid;
     display: inline-block; /* para a border bottom a linha q fica em baixo do h3 fique apenas em baixo do texto, e n na tela toda */ 
     padding: 8px;
 }
