@@ -57,6 +57,7 @@ export const Formulario = (props) => {
             </Botao>
             </form> 
         </section> 
+        //tiramos a lista itens pois ela so servia para dar nome dos itens que vao aparecer no select e esses nomes temos na lista posicao la no app.jsx, ou seja para nao ter code duplicado passamos por props usando props.itens
         //definimos em cada um que o valor vai ser predefinido, e o aoAlterado que seria os novos valores vai ser igual a valor function ai setNome que a lista que altera(valor)
         //ali nos 2 primeiros e ultimo campotexto eu coloquei que obrigatorio um parametro qualquer e igual ao valor true, e la no campotexto.jsx e listasuspensa.jsx eu falei que required e igual a esse parametro,ou seja de forma simplificada required = true tornando required on de forma que ele junte os mundos html5 com o react, isso para os campos que eu botei obrigatorio serem obrigatorios a ser prenchidos// 
         //onSubmit seria quando o formulario for enviado seja por um botão ou tecla, falamamos que quando o formulario foi enviado ele vai acionar a função aoSalvar// 
