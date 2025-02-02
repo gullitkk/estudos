@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
 export const Formulario = (props) => {
 
-    const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o serValor seria aquilo que altera// 
+    const [nome, setNome] = useState('') //useState seria um wook (gancho) que pega 1 valor e me entrega 2 valores o valor (nome) e o setValor (setNome) o valor seria algo ja predefinido e o setValor seria aquilo que altera// 
     const [função, setFunção] = useState('')
     const [imagem, setimagem] = useState('')
     const [posição, setPosição] = useState('')
