@@ -31,24 +31,25 @@ function App() {
     }
   ]
 
-  const [campeaoes, setCampeao]= useState()
+  const [campeaos, setCampeao]= useState()
 
   const aoNovoCampeaoAdicionado = (campeao) => {
     console.log(campeao)
-    setCampeao([campeaoes, campeao])
+    setCampeao([campeaos, campeao])
   } //a funçao e responsavel por mandar um console.log de campeao, e a mudar a lista de campeaos, com a função setCampeao que e responsavel por ler e editar, paranteses para acionar e colchete para criar uma lista colocando o campeaos que seria a lista com campeao que seria o paramento que ta vindo a cada submit//
 
   return (
     <>  
       <Banner />
       <Formulario itens={posicao.map(posicao => posicao.nome)} aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
-      {posicao.map(posicao => <Posicao 
+        {posicao.map(posicao => 
+  <Posicao 
           key={posicao.nome}
           nome={posicao.nome}
           corPrimaria={posicao.corPrimaria}
           corSecundaria={posicao.corSecundaria}
-          campeaos={campeaoes}
-      />)}
+          campeaos={campeaos}
+        />)}
     </>
     // no formulario criamos um itens que seria o nome das posiçãos no select, e como esses nomes ja tavam definido no posicao, a gnt igualou o itens a posicao.map uma das funçãos do map  e ele pega uma lista e retorna oque eu quiser dessa lista, ai eu falei eu quero que ele pegue a lista posicao e me retorne apenas o posicao.nome que seria os nomes vale lembrar que estou passando como props então no componete tenho q dizer props.tal coisa// 
     //no posicao.map usamos outra função do map que seria renderizar diferentes partes de uma lista de forma dividada, por isso que la falamos posicao.map que seria a lista, quero que retorne posicao e a cada posicao eu quero que ele renderize dentro do componete Posicao um nome que seria posicao.nome e as cores que esta descrito acima,vale lembrar que estou passando como props então no componete tenho q dizer props.tal coisa// 
