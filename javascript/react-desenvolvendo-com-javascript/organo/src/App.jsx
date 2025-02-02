@@ -31,7 +31,7 @@ function App() {
     }
   ]
 
-  const [campeaos, setCampeao]= useState()
+  const [campeaos, setCampeao] = useState([])
 
   const aoNovoCampeaoAdicionado = (campeao) => {
     console.log(campeao)
@@ -47,7 +47,7 @@ function App() {
           nome={posicao.nome}
           corPrimaria={posicao.corPrimaria}
           corSecundaria={posicao.corSecundaria}
-          campeaos={campeaos}
+          campeao={campeaos.filter( campeao => campeao.posicao === posicao.nome )}
         />)}
     </>
     // no formulario criamos um itens que seria o nome das posiçãos no select, e como esses nomes ja tavam definido no posicao, a gnt igualou o itens a posicao.map uma das funçãos do map  e ele pega uma lista e retorna oque eu quiser dessa lista, ai eu falei eu quero que ele pegue a lista posicao e me retorne apenas o posicao.nome que seria os nomes vale lembrar que estou passando como props então no componete tenho q dizer props.tal coisa// 

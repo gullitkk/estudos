@@ -9,3 +9,10 @@
     display: inline-block; /* para a border bottom a linha q fica em baixo do h3 fique apenas em baixo do texto, e n na tela toda */ 
     padding: 8px;
 }
+
+.campeao {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
