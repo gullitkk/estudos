@@ -7,7 +7,7 @@ export const Posicao = (props) => {
         <section className='Time' style={{ backgroundColor: props.corSecundaria }}> 
             <h3 style={{ borderColor: props.corPrimaria}}>{props.nome}</h3>
             <section className='campeao'>
-                {props.campeao.map( campeao => <Campeao nome={campeao.nome} key={campeao.nome} função={campeao.função} imagem={campeao.imagem}/> )}   
+                {props.campeao.map( campeao => <Campeao corFundo={props.corPrimaria} nome={campeao.nome} key={campeao.nome} função={campeao.função} imagem={campeao.imagem}/> )}   
             </section>
         </section>
         //aquele props.campeao.length > 0 && seria se a quantidade de campeao ou seja da lista vou maior que zero ele retorna a função que aciona o campo bot lane, etc. se n ele n aciona, posso usar esse metodo ou o da virgula// 
