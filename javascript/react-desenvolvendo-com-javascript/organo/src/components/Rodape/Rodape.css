@@ -1,0 +1,19 @@
+.fotter {
+    background-color: #6278F7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.redes-sociais {
+    padding: 2em;
+}
+
+.redes-sociais img {
+    margin-right: 32px;
+}
+
+.creditos {
+    color: #ffff;
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Banner from './components/Banner'; //colocando o nome de index.jsx voce so precisa colocar o nome da pasta no import pois o import ja identifica o jsx//
 import Formulario from './components/Formulario';//criamos um arquivo chamado index.jsx e la exportamos e importamos oque a gente quiser, esse metodo e parecido com o do banner de so renomear o arquivo para index.jsx mas aqui o nosso arquivo principal continua com o nome desejado e a gente escolhe oque quer importar, a partir de agora vou usar esse jeito// 
 import Posicao from "./components/Posicao";
+import Rodape from "./components/Rodape";
 
 function App() {
   // chamamos o banner pra dentro da function ou seja para ele aparecer, fechamos ele com o /> e o vs code automaticamente fez um import la em cima desse componete que a gente criou//
@@ -49,6 +50,7 @@ function App() {
           corSecundaria={posicao.corSecundaria}
           campeao={campeaos.filter( campeao => campeao.posição === posicao.nome )}
         />)}
+        <Rodape />
     </>
     // no formulario criamos um itens que seria o nome das posiçãos no select, e como esses nomes ja tavam definido no posicao, a gnt igualou o itens a posicao.map uma das funçãos do map  e ele pega uma lista e retorna oque eu quiser dessa lista, ai eu falei eu quero que ele pegue a lista posicao e me retorne apenas o posicao.nome que seria os nomes vale lembrar que estou passando como props então no componete tenho q dizer props.tal coisa// 
     //no posicao.map usamos outra função do map que seria renderizar diferentes partes de uma lista de forma dividada, por isso que la falamos posicao.map que seria a lista, quero que retorne posicao e a cada posicao eu quero que ele renderize dentro do componete Posicao um nome que seria posicao.nome e as cores que esta descrito acima,vale lembrar que estou passando como props então no componete tenho q dizer props.tal coisa// 
