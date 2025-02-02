@@ -1,4 +1,4 @@
-import './Colaborador.css'
+import './Campeao.css'
 
 export const Colaborador = (props) => {
     return (
