@@ -1,6 +1,6 @@
 import './Campeao.css'
 
-export const Colaborador = (props) => {
+export const Campeao = (props) => {
     return (
     <div className='colaborador'>
         <div className='cabecalho'>
