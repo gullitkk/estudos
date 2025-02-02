@@ -19,7 +19,11 @@ export const Formulario = (props) => {
             imagem,
             posição
         })
-    }
+        setNome('')
+        setFunção('')
+        setimagem('')
+        setPosição('')
+    } // essa ultima parte do codigo e para limpar a area de cadastro
 
     return (
         <section className='formulario'>
