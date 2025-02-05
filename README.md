@@ -1,2 +1,2 @@
-# Meus estudos fazendo cursos do Gustavo guanabara e da alura
+# Meus estudos fazendo alguns cursos
 
