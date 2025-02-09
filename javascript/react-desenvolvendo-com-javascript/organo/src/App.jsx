@@ -38,11 +38,16 @@ function App() {
     setCampeao([...campeaos, campeao])
   } //a funçao e responsavel por mandar um console.log de campeao, e a mudar a lista de campeaos, com a função setCampeao que e responsavel por ler e editar, paranteses para acionar e colchete para criar uma lista colocando o campeaos que seria a lista com campeao que seria o paramento que ta vindo a cada submit//
 
+  const deletandoCampeao = () => {
+    console.log('deletando')
+  }
+
   return (
     <>  
       <Banner />
       <Formulario itens={posicao.map(posicao => posicao.nome)} aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
         {posicao.map(posicao => <Posicao 
+          aoDeletar={deletandoCampeao}
           key={posicao.nome}
           nome={posicao.nome}
           corPrimaria={posicao.corPrimaria}
