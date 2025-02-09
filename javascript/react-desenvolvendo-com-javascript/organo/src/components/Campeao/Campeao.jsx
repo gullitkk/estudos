@@ -3,6 +3,7 @@ import './Campeao.css'
 export const Campeao = (props) => {
     return (
     <div className='colaborador'>
+        <div className='deletar' onClick={props.aoDeletar}>Deletar</div>
         <div className='cabecalho' style={{backgroundColor: props.corFundo}}>
             <img src={props.imagem}alt={props.nome}/>
         </div>

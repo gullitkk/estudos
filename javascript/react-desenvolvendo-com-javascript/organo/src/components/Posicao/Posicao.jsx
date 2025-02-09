@@ -8,8 +8,7 @@ export const Posicao = (props) => {
             <h3 style={{ borderColor: props.corPrimaria}}>{props.nome}</h3>
             <section className='campeao'>
                 {props.campeao.map( campeao => {
-                    console.log(<Campeao corFundo={props.corPrimaria} nome={campeao.nome} key={campeao.nome} função={campeao.função} imagem={campeao.imagem}/> )
-                    return <Campeao corFundo={props.corPrimaria} aoDeletar={aoDeletar} nome={campeao.nome} key={campeao.nome}função={campeao.função} imagem={campeao.imagem}/> 
+                    return <Campeao corFundo={props.corPrimaria} aoDeletar={props.aoDeletar} nome={campeao.nome} key={campeao.nome}função={campeao.função} imagem={campeao.imagem}/> 
                 })}   
             </section>
         </section>
