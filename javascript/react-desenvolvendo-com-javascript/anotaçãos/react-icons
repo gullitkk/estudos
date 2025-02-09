@@ -1,1 +1,2 @@
 voce pode importar icones usando o react app, para isso entre no site deles selecione npm copie o codigo de instalar, cola no terminal e depois seleciona o icone que voce quer no site deles, clica no icone e copia o codigo import, se n pode escrever na marra
+depois disso voce usa ele como se fosse uma div, <nome dele /> fecha ele, pode botar oque quiser dentro
