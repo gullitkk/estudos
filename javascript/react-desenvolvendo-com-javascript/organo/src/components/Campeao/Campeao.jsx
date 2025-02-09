@@ -4,7 +4,7 @@ import './Campeao.css'
 export const Campeao = (props) => {
     return (
     <div className='colaborador'>
-       <IoMdCloseCircle className='deletar' onClick={props.aoDeletar} /> 
+       <IoMdCloseCircle size={25} className='deletar' onClick={props.aoDeletar} /> 
         <div className='cabecalho' style={{backgroundColor: props.corFundo}}>
             <img src={props.imagem}alt={props.nome}/>
         </div>
@@ -14,4 +14,4 @@ export const Campeao = (props) => {
             </div>
     </div>
     )
-}  
+}  //esse Iomd e o icone, ele funciona como se fosse uma div, voce abre e fecha ele bota oque quiser dentro, o size e uma propriedade nova deles que permite aumentar o tamanho do icone/ /
