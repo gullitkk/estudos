@@ -1,15 +1,14 @@
 import './Posicao.css'
 import Campeao from '../Campeao'
 
-export const Posicao = (campeao, mudarCor, posicao, aoDeletar) => {
+export const Posicao = (props) => {
     return (
         props.campeao.length > 0 &&
         <section className='Time' style={{ backgroundColor: props.corSecundaria }}> 
-            <input type="color" className="cor" onChange={evento => mudarCor(evento.target.value, posicao.nome)} value={props.corPrimaria}/>
             <h3 style={{ borderColor: props.corPrimaria}}>{props.nome}</h3>
             <section className='campeao'>
-                {campeao.map( campeao => {
-                    return <Campeao corFundo={props.corPrimaria} aoDeletar={aoDeletar} nome={campeao.nome} key={campeao.nome}função={campeao.função} imagem={campeao.imagem}/> 
+                {props.campeao.map( campeao => {
+                    return <Campeao corFundo={props.corPrimaria} aoDeletar={props.aoDeletar} nome={campeao.nome} key={campeao.nome}função={campeao.função} imagem={campeao.imagem}/> 
                 })}   
             </section>
         </section>

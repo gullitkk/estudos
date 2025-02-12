@@ -43,22 +43,11 @@ function App() {
     console.log('deletando')
   }
 
-  function mudarCorTime(cor, nome) {
-    setPosicao(posicao.map(posicao => {
-      if(posicao.nome === nome) {
-        posicao.corPrimaria = cor
-      }
-      return posicao;
-    } ))
-  }
-
-
   return (
     <>  
       <Banner />
       <Formulario itens={posicao.map(posicao => posicao.nome)} aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
         {posicao.map(posicao => <Posicao 
-          mudarCor={mudarCorTime}
           aoDeletar={deletandoCampeao}
           key={posicao.nome}
           nome={posicao.nome}
