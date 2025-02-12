@@ -4,7 +4,7 @@ import './Campeao.css'
 export const Campeao = (props) => {
     return (
     <div className='colaborador'>
-       <IoMdCloseCircle size={25} className='deletar' onClick={props.aoDeletar} /> 
+        <IoMdCloseCircle size={25} className='deletar' onClick={props.aoDeletar} /> 
         <div className='cabecalho' style={{backgroundColor: props.corFundo}}>
             <img src={props.imagem}alt={props.nome}/>
         </div>

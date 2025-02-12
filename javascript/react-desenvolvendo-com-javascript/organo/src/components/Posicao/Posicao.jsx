@@ -5,6 +5,7 @@ export const Posicao = (props) => {
     return (
         props.campeao.length > 0 &&
         <section className='Time' style={{ backgroundColor: props.corSecundaria }}> 
+            <input type="color" className="cor"/>
             <h3 style={{ borderColor: props.corPrimaria}}>{props.nome}</h3>
             <section className='campeao'>
                 {props.campeao.map( campeao => {

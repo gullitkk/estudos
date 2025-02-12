@@ -1,6 +1,7 @@
 .Time {
     text-align: center;
     padding: 32px;
+    position: relative;
 }
 
 .Time h3 {
@@ -15,4 +16,10 @@
     margin-top: 32px;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.cor {
+    position: absolute;
+    right: 50px;
+    top: 10px;
 }
