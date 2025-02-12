@@ -9,7 +9,7 @@ function App() {
   // o react e isso a gente cria componetes e importa pro principal // 
   // tiramos as coisas do campo texto daqui pois vamos iplementar ele no formulario, como ele vai ficar dentro do formulario e mais facil de  importar ele la, e depois so exporta o formulario aqui//
 
-  const posicao = [
+  const [posicao, setPosicao] = ([
     {
       nome: 'Top lane',
       corPrimaria: '#57C278',
@@ -30,7 +30,16 @@ function App() {
       corPrimaria: '#E06B69',
       corSecundaria: '#FDE7E8'
     }
-  ]
+  ])
+
+  const MudarCorTime = (cor, nome) => {
+    setPosicao(posicao.map( posicao => {
+      if(posicao.nome === nome) {
+        time.corSecundaria = cor
+      }
+      return posicao
+    } ))
+  }
 
   const [campeaos, setCampeao] = useState([])
 
@@ -47,6 +56,7 @@ function App() {
       <Banner />
       <Formulario itens={posicao.map(posicao => posicao.nome)} aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
         {posicao.map(posicao => <Posicao 
+          MudarCor={MudarCorTime}
           aoDeletar={deletandoCampeao}
           key={posicao.nome}
           nome={posicao.nome}
