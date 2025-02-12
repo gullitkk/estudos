@@ -32,12 +32,12 @@ function App() {
     }
   ])
 
-  const MudarCorTime = (cor, nome) => {
-    setPosicao(posicao.map( posicao => {
+  function mudarCorTime(cor, nome) {
+    setPosicao(posicao.map(posicao => {
       if(posicao.nome === nome) {
-        time.corSecundaria = cor
+        posicao.corPrimaria = cor
       }
-      return posicao
+      return posicao;
     } ))
   }
 
@@ -56,7 +56,7 @@ function App() {
       <Banner />
       <Formulario itens={posicao.map(posicao => posicao.nome)} aoCampeaoCadastrado={campeao => aoNovoCampeaoAdicionado(campeao)} />
         {posicao.map(posicao => <Posicao 
-          mudarCor={MudarCorTime}
+          mudarCor={mudarCorTime}
           aoDeletar={deletandoCampeao}
           key={posicao.nome}
           nome={posicao.nome}
