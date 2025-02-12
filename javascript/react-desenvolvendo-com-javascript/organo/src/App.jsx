@@ -32,14 +32,6 @@ function App() {
     }
   ])
 
-  function mudarCorTime(cor, nome) {
-    setPosicao(posicao.map(posicao => {
-      if(posicao.nome === nome) {
-        posicao.corPrimaria = cor
-      }
-      return posicao;
-    } ))
-  }
 
   const [campeaos, setCampeao] = useState([])
 
@@ -50,6 +42,16 @@ function App() {
   const deletandoCampeao = () => {
     console.log('deletando')
   }
+
+  function mudarCorTime(cor, nome) {
+    setPosicao(posicao.map(posicao => {
+      if(posicao.nome === nome) {
+        posicao.corPrimaria = cor
+      }
+      return posicao;
+    } ))
+  }
+
 
   return (
     <>  
