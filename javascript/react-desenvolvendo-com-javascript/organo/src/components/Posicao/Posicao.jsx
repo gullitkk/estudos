@@ -2,15 +2,10 @@ import './Posicao.css'
 import Campeao from '../Campeao'
 
 export const Posicao = (props) => {
-
-    const corTrocada = (evento) => {
-        corTrocada(evento.target.value)
-    }
-
     return (
         props.campeao.length > 0 &&
         <section className='Time' style={{ backgroundColor: props.corSecundaria }}> 
-            <input type="color" className="cor" onChange={corTrocada}/>
+            <input type="color" className="cor" value={props.corSecundaria}/>
             <h3 style={{ borderColor: props.corPrimaria}}>{props.nome}</h3>
             <section className='campeao'>
                 {props.campeao.map( campeao => {
