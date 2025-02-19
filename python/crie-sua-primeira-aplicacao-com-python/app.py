@@ -16,9 +16,9 @@ opcao_escolhida = int(input('Escolha uma opção: ')) #o input puxa uma informa�
 
 #a gente tava tendo 1 erro que todos ifs tava dando false, isso acontece porque a variavel opção escolhida tava indo como string e o numero 1,2,3 sao inteiros ou seja tudo vai da false, colocamos um int() antes do input para forçar que o valor que o usuario nos de ou seja a variavel opçao escolhida seja um valor inteiro
 
-if opcao_escolhida == 1:
+if opcao_escolhida == 1: #aqui depois do if usamos :
     print('Cadastrar restaurante')
-elif opcao_escolhida == 2:
+elif opcao_escolhida == 2: # elif seria basicamente o else if
     print('Listar restaurantes')
 elif opcao_escolhida == 3:
     print('Ativar restaurantes')
